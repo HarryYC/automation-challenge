@@ -3,7 +3,7 @@ import time
 import sys
 import pexpect
 
-def remote(ip, username, password, script):
+asfdef remote(ip, username, password, script):
     print ("ssh " + username + "@" + ip)
     ssh_newkey = 'Are you sure you want to continue connecting'
     child = pexpect.spawn("ssh " + username + "@" + ip + " " + script)
