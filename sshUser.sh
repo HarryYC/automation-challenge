@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ "$#" -ne 4 ] || ! [ -f "$1" ] || ! [ -f "$2" ] || [ $3 != "grant" -a $3 != "revoke" ]; then
+if [ "$#" -ne 3 ] || ! [ -f "$1" ] || ! [ -f "$2" ] || [ $3 != "grant" -a $3 != "revoke" ]; then
   echo "Usage: $0 SERVERLIST USERLIST grant/revoke"
   echo "Example: $0 server.txt user.txt grant"
   exit 1
